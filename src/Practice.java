@@ -1,16 +1,23 @@
+import java.util.Scanner;
+
 public class Practice {
    public static void main(String[] args){
+    Student student = new Student();
+    student.setDetails("Ben",2, "d");
 
-    int age = 90;
+   }
+}
 
-    if(age > 40){
-        System.out.println("You can marry ");
-    }else  {
-        if(age < 39 ){
-            System.out.println("Not yet bro");
-        }else {
-            System.out.println("Guyy go school ");
-        }
-    }
-    }
-};
+class Student {
+String name ;
+int age ;
+String about ;
+
+public void setDetails(String name, int age , String about){
+   this.name = name ;
+   this.age = age ;
+   this.about = about;
+
+   System.out.println("Name"+ name);
+}
+}
