@@ -13,10 +13,10 @@ public class Location {
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     public Long id;
 
-    public Long name;
+    public String name;
     public String country;
 
-    public Long getName() {
+    public String getName() {
         return name;
     }
 
@@ -32,7 +32,16 @@ public class Location {
         this.country = country;
     }
 
-    public void setName(Long name) {
+    public void setName(String name) {
         this.name = name;
+    }
+
+       @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + country + '\'' +
+                '}';
     }
 }

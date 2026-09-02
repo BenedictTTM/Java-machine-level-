@@ -22,4 +22,10 @@ public class LocationService{
       return "Location not found";
      }
     }
+
+    public Location addLocation (Location location){
+      Location userLocation = locationRepository.save(location);
+      System.out.println("This is the new location "+ userLocation.toString());
+      return userLocation;
+    }
 }
